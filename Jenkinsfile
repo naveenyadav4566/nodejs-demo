@@ -1,12 +1,12 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('sailaja868-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('valaxy-dockerhub')
     }
     stages { 
         stage('SCM Checkout') {
             steps{
-            git 'https://github.com/ravdy/nodejs-demo.git'
+            git 'https://github.com/naveenyadav4566/nodejs-demo.git'
             }
         }
 
